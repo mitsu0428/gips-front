@@ -43,9 +43,7 @@ function MainPage() {
         />
       </StyledContainer>
 
-      <StyledContainer>
-        <StyledDescription />
-      </StyledContainer>
+      <StyledDescription />
 
       <StyledFooter />
     </Main>
@@ -59,6 +57,6 @@ const Main = styled.main`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 16px;
   min-height: 100vh;
 `;

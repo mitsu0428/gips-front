@@ -17,13 +17,9 @@ function StyledRecommendationn() {
 export default StyledRecommendationn;
 
 const Recommendationn = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0 1.0875rem 1.45rem;
-  line-height: 2;
   background-color: #cccccc;
   border-radius: 8px;
-  padding: 10px;
-  margin: 10px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  overflow-wrap: break-word;
+  padding: 16px;
 `;

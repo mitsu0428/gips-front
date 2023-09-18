@@ -6,7 +6,7 @@ import StyledInstagramIcon from "./InstagramIcon";
 const StyledIconsContainer = () => {
   return (
     <IconsContainer>
-      <StyledTwittermIcon />
+      {/* <StyledTwittermIcon /> */}
       <StyledInstagramIcon />
     </IconsContainer>
   );

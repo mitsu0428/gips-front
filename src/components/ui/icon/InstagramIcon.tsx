@@ -3,7 +3,11 @@ import styled from "styled-components";
 import { FaInstagram } from "react-icons/fa";
 
 const StyledInstagramIcon = () => {
-  return <InstagramIcon />;
+  return (
+    <InstagramIcon
+      onClick={() => window.open("https://www.instagram.com/gips_original/")}
+    />
+  );
 };
 
 export default StyledInstagramIcon;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import StyledContainer from "@/components/ui/Container";
+import StyledContainer from "@/components/ui/container/Container";
 import StyledButton from "@/components/ui/button/Button";
 import StyledText from "@/components/ui/Text";
 import StyledFooter from "@/components/Layout/Footer";
@@ -21,7 +21,7 @@ function MainPage() {
 
       <StyledContainer>
         <TextWithCirclePicture
-          text="GIPS"
+          text="G.I.PS"
           width={400}
           height={400}
           imgPath="/gips-images/フィルグ-0.PNG"

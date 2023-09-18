@@ -5,7 +5,7 @@ import StyledIconsContainer from "../ui/icon/StyledIcons";
 function StyledHeader() {
   return (
     <Header>
-      <HeaderText>GIPs公式サイト</HeaderText>
+      <HeaderText>G.I.Ps</HeaderText>
       <StyledIconsContainer />
     </Header>
   );

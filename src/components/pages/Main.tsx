@@ -6,13 +6,14 @@ import GipsDescription from "../features/GipsDescription";
 import GipsConcepts from "../features/GipsConcepts";
 import GipsFixedButton from "../features/GipsFixedButton";
 
+import font from "../Tumugi/Font/NextFont";
 import CustomSimpleButton from "../Tumugi/Button/CustomSimpleButton/CustomSimpleButton";
 import CustomImage from "../Tumugi/Image/CustomImage/CustomImage";
 import CustomSimpleFooter from "../Tumugi/Layout/CustomSimpleFooter/CustomSimpleFooter";
+import CustomWrapperWithShadow from "../Tumugi/Wrapper/CustomWrapperWithShadow/CustomWrapperWithShadow";
 import CustomWrapperWithoutShadow from "../Tumugi/Wrapper/CustomWrapperWithoutShadow/CustomWrapperWithoutShadow";
 import CustomSubtitle from "../Tumugi/Text/CustomSubText/CustomSubtitle";
 import GipsOrder from "../features/GipsOrder";
-import font from "../Tumugi/Font/NextFont";
 
 function MainPage() {
   const onClickToBaseShop = () => {
@@ -23,7 +24,7 @@ function MainPage() {
     <Main className={font.notoSansJP700.className}>
       <GipsHeader />
 
-      <CustomWrapperWithoutShadow>
+      <CustomWrapperWithShadow>
         <CustomImage
           text="G.I.Ps"
           imgPath="/gips-images/フィルグ-0.PNG"
@@ -31,13 +32,21 @@ function MainPage() {
           width={400}
           height={400}
         />
+      </CustomWrapperWithShadow>
+
+      <CustomWrapperWithoutShadow>
+        <CustomSubtitle text="『あなたの毎日が豊かな毎日になりますように。』" />
+        <CenterWrapper>
+          <CustomSimpleButton
+            key="1"
+            buttonText="オンラインショップを見る"
+            onClick={onClickToBaseShop}
+          />
+        </CenterWrapper>
       </CustomWrapperWithoutShadow>
 
       <CustomWrapperWithoutShadow>
-        <CustomSubtitle text="あなたの毎日が豊かな毎日になりますように。" />
-      </CustomWrapperWithoutShadow>
-
-      <CustomWrapperWithoutShadow>
+        <CustomSubtitle text="コンセプト" />
         <GipsConcepts />
       </CustomWrapperWithoutShadow>
 
@@ -57,6 +66,7 @@ function MainPage() {
       </CustomWrapperWithoutShadow>
 
       <CustomWrapperWithoutShadow>
+        <CustomSubtitle text="商品にかける想い" />
         <GipsDescription />
       </CustomWrapperWithoutShadow>
 
@@ -73,4 +83,10 @@ const Main = styled.main`
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
+`;
+
+const CenterWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

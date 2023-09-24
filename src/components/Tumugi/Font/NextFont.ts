@@ -1,6 +1,7 @@
 import { Roboto } from "@next/font/google";
 import { Noto_Sans_JP } from "@next/font/google";
 
+// MEMO: className={font.roboto.className}で呼び出す
 const roboto = Roboto({
   subsets: ["cyrillic-ext", "greek"],
   weight: "300",

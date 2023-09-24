@@ -12,6 +12,7 @@ import CustomSimpleFooter from "../Tumugi/Layout/CustomSimpleFooter/CustomSimple
 import CustomWrapperWithoutShadow from "../Tumugi/Wrapper/CustomWrapperWithoutShadow/CustomWrapperWithoutShadow";
 import CustomSubtitle from "../Tumugi/Text/CustomSubText/CustomSubtitle";
 import GipsOrder from "../features/GipsOrder";
+import font from "../Tumugi/Font/NextFont";
 
 function MainPage() {
   const onClickToBaseShop = () => {
@@ -19,7 +20,7 @@ function MainPage() {
   };
 
   return (
-    <Main>
+    <Main className={font.notoSansJP700.className}>
       <GipsHeader />
 
       <CustomWrapperWithoutShadow>

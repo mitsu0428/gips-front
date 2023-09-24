@@ -2,22 +2,30 @@ import React from "react";
 import styled from "styled-components";
 
 type Props = {
+  key: string | number;
   buttonText: string;
   onClick?: () => void;
 };
 
-function StyledButton({ buttonText, onClick }: Props) {
-  return <Button onClick={onClick}>{buttonText}</Button>;
+function CustomSimpleButton({ key, buttonText, onClick }: Props) {
+  return (
+    <StyledButton
+      key={key}
+      onClick={onClick}
+    >
+      {buttonText}
+    </StyledButton>
+  );
 }
 
-export default StyledButton;
+export default CustomSimpleButton;
 
-const Button = styled.button`
-  background-color: #c4807d;
+const StyledButton = styled.button`
   border-radius: 8px;
   border: none;
   cursor: pointer;
   color: #fff;
+  background-color: #333333;
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
@@ -30,6 +38,6 @@ const Button = styled.button`
   vertical-align: middle;
   white-space: nowrap;
   &:hover {
-    background-color: #c4807d;
+    background-color: #cccccc;
   }
 `;

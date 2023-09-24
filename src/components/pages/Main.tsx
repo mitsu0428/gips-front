@@ -1,14 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import StyledContainer from "@/components/ui/container/Container";
-import StyledButton from "@/components/ui/button/Button";
-import StyledText from "@/components/ui/Text";
-import StyledFooter from "@/components/Layout/Footer";
-import StyledHeader from "@/components/Layout/Header";
-import TextWithCirclePicture from "../ui/image/CirclePicture";
-import StyledButtons from "../ui/button/Buttons";
-import StyledDescription from "../Layout/Description";
-import StyledRecommendationn from "../Layout/Recommendation";
+
+import GipsHeader from "@/components/features/Layout/GipsHeader";
+import GipsDescription from "../features/GipsDescription";
+import GipsConcepts from "../features/GipsConcepts";
+import GipsFixedButton from "../features/GipsFixedButton";
+
+import CustomSimpleButton from "../Tumugi/Button/CustomSimpleButton/CustomSimpleButton";
+import CustomImage from "../Tumugi/Image/CustomImage/CustomImage";
+import CustomSimpleFooter from "../Tumugi/Layout/CustomSimpleFooter/CustomSimpleFooter";
+import CustomWrapperWithoutShadow from "../Tumugi/Wrapper/CustomWrapperWithoutShadow/CustomWrapperWithoutShadow";
+import CustomSubtitle from "../Tumugi/Text/CustomSubText/CustomSubtitle";
+import GipsOrder from "../features/GipsOrder";
 
 function MainPage() {
   const onClickToBaseShop = () => {
@@ -17,35 +20,46 @@ function MainPage() {
 
   return (
     <Main>
-      <StyledHeader />
+      <GipsHeader />
 
-      <StyledContainer>
-        <TextWithCirclePicture
-          text="G.I.PS"
+      <CustomWrapperWithoutShadow>
+        <CustomImage
+          text="G.I.Ps"
+          imgPath="/gips-images/フィルグ-0.PNG"
+          alt="G.I.Ps"
           width={400}
           height={400}
-          imgPath="/gips-images/フィルグ-0.PNG"
         />
-      </StyledContainer>
+      </CustomWrapperWithoutShadow>
 
-      <StyledContainer>
-        <StyledRecommendationn />
-      </StyledContainer>
+      <CustomWrapperWithoutShadow>
+        <CustomSubtitle text="あなたの毎日が豊かな毎日になりますように。" />
+      </CustomWrapperWithoutShadow>
 
-      <StyledContainer>
-        <StyledText text="あなたの毎日が豊かな毎日になりますように。" />
-      </StyledContainer>
+      <CustomWrapperWithoutShadow>
+        <GipsConcepts />
+      </CustomWrapperWithoutShadow>
 
-      <StyledContainer>
-        <StyledButton
+      <GipsFixedButton />
+
+      <CustomWrapperWithoutShadow>
+        <CustomSimpleButton
+          key="1"
           buttonText="Base Shopで購入する"
           onClick={onClickToBaseShop}
         />
-      </StyledContainer>
+      </CustomWrapperWithoutShadow>
 
-      <StyledDescription />
+      <CustomWrapperWithoutShadow>
+        <CustomSubtitle text="注文までの流れ" />
+        <GipsOrder />
+      </CustomWrapperWithoutShadow>
 
-      <StyledFooter />
+      <CustomWrapperWithoutShadow>
+        <GipsDescription />
+      </CustomWrapperWithoutShadow>
+
+      <CustomSimpleFooter text="© 2023 GIPs" />
     </Main>
   );
 }
@@ -57,6 +71,5 @@ const Main = styled.main`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
   min-height: 100vh;
 `;

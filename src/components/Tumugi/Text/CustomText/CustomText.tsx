@@ -5,15 +5,15 @@ type Props = {
   text: string;
 };
 
-function StyledText({ text }: Props) {
+const CustomText: React.FC<Props> = ({ text }) => {
   return <Text>{text}</Text>;
-}
+};
 
-export default StyledText;
+export default CustomText;
 
 const Text = styled.p`
   font-size: 18px;
-  margin-top: 16px;
+  padding: 8px;
   text-align: center;
   @media (max-width: 768px) {
     font-size: 16px;

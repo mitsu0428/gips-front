@@ -5,14 +5,15 @@ type Props = {
   children: React.ReactNode;
 };
 
-function StyledContainer({ children }: Props) {
+function CustomWrapperWithoutShadow({ children }: Props) {
   return <Container>{children}</Container>;
 }
 
-export default StyledContainer;
+export default CustomWrapperWithoutShadow;
 
 const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 0 1.0875rem 1.45rem;
+  margin-top: 16px;
+  padding: 16px;
 `;

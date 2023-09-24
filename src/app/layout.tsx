@@ -4,8 +4,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "G.I.Ps",
-  description: "G.I.Ps",
+  title: "【公式】G.I.Ps | 国産の安心・安全なサプリメント",
+  description: "【公式】G.I.Ps | 国産の安心・安全なサプリメント",
 };
 
 export default function RootLayout({

@@ -21,7 +21,7 @@ function CustomSimpleButton({ key, buttonText, onClick }: Props) {
 export default CustomSimpleButton;
 
 const StyledButton = styled.button`
-  border-radius: 8px;
+  border-radius: 4px;
   border: none;
   cursor: pointer;
   color: #fff;

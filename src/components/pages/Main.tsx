@@ -8,8 +8,8 @@ import GipsFixedButton from "../features/GipsFixedButton";
 
 import font from "../Tumugi/Font/NextFont";
 import CustomSimpleButton from "../Tumugi/Button/CustomSimpleButton/CustomSimpleButton";
-import CustomImage from "../Tumugi/Image/CustomImage/CustomImage";
 import CustomSimpleFooter from "../Tumugi/Layout/CustomSimpleFooter/CustomSimpleFooter";
+import CustomImageWrapper from "../Tumugi/Image/CustomImage/CustomImageWrapper";
 import CustomWrapperWithShadow from "../Tumugi/Wrapper/CustomWrapperWithShadow/CustomWrapperWithShadow";
 import CustomWrapperWithoutShadow from "../Tumugi/Wrapper/CustomWrapperWithoutShadow/CustomWrapperWithoutShadow";
 import CustomSubtitle from "../Tumugi/Text/CustomSubText/CustomSubtitle";
@@ -25,9 +25,9 @@ function MainPage() {
       <GipsHeader />
 
       <CustomWrapperWithShadow>
-        <CustomImage
-          text="G.I.Ps"
+        <CustomImageWrapper
           imgPath="/gips-images/フィルグ-0.PNG"
+          text="G.I.Ps"
           alt="G.I.Ps"
           width={400}
           height={400}

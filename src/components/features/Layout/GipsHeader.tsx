@@ -1,12 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
 import CustomSimpleLayout from "../../Tumugi/Layout/CustomSimpleHeader/CustomSimpleHeader";
 import CustomInstagramIcon from "../../Tumugi/Icon/CustomInstagramIcon/CustomInsgaramIcon";
 
 function GipsHeader() {
   return (
     <CustomSimpleLayout flexDirection="row">
-      <HeaderText>G.I.Ps</HeaderText>
+      <LogoWrapper>
+        <StyledImage
+          src="/gips-logo/gips-logo.jpg"
+          width={50}
+          height={50}
+          alt={""}
+        />
+      </LogoWrapper>
       <CustomInstagramIcon instagramUrl="https://www.instagram.com/gips_original/" />
     </CustomSimpleLayout>
   );
@@ -14,12 +22,12 @@ function GipsHeader() {
 
 export default GipsHeader;
 
-const HeaderText = styled.h1`
-  font-size: 32px;
-  @media (max-width: 768px) {
-    font-size: 24px;
-  }
-  @media (max-width: 480px) {
-    font-size: 20px;
-  }
+const LogoWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const StyledImage = styled(Image)`
+  border-radius: 4px;
 `;

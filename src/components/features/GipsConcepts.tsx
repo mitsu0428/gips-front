@@ -18,7 +18,7 @@ export default GipsConcepts;
 
 const Recommendationn = styled.div`
   background-color: #cccccc;
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   overflow-wrap: break-word;
   padding: 16px;

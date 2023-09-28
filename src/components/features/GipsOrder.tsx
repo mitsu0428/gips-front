@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import CustomText from "../Tumugi/Text/CustomText/CustomText";
+import CustomText from "../Tsumugi/Text/CustomText/CustomText";
 
 function GipsOrder() {
   return (

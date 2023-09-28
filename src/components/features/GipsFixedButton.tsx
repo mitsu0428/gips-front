@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import CustomSimpleButton from "../Tumugi/Button/CustomSimpleButton/CustomSimpleButton";
+import CustomSimpleButton from "../Tsumugi/Button/CustomSimpleButton/CustomSimpleButton";
 
 function GipsFixedButton() {
   const onClickToBaseShop = () => {

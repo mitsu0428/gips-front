@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import CustomText from "../Tumugi/Text/CustomText/CustomText";
+import CustomText from "../Tsumugi/Text/CustomText/CustomText";
 
 function GipsDescription() {
   return (

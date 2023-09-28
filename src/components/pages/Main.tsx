@@ -7,13 +7,13 @@ import GipsConcepts from "../features/GipsConcepts";
 import GipsFixedButton from "../features/GipsFixedButton";
 import GipsOrder from "../features/GipsOrder";
 
-import font from "../Tumugi/Font/NextFont";
-import CustomSimpleButton from "../Tumugi/Button/CustomSimpleButton/CustomSimpleButton";
-import CustomSimpleFooter from "../Tumugi/Layout/CustomSimpleFooter/CustomSimpleFooter";
-import CustomImageWrapper from "../Tumugi/Image/CustomImage/CustomImageWrapper";
-import CustomWrapperWithoutShadow from "../Tumugi/Wrapper/CustomWrapperWithoutShadow/CustomWrapperWithoutShadow";
-import CustomBoldText from "../Tumugi/Text/CustomBoldText/CustomBoldText";
-import CustomSubtitle from "../Tumugi/Text/CustomSubText/CustomSubtitle";
+import font from "../Tsumugi/Font/NextFont";
+import CustomSimpleButton from "../Tsumugi/Button/CustomSimpleButton/CustomSimpleButton";
+import CustomSimpleFooter from "../Tsumugi/Layout/CustomSimpleFooter/CustomSimpleFooter";
+import CustomImageWrapper from "../Tsumugi/Image/CustomImage/CustomImageWrapper";
+import CustomWrapperWithoutShadow from "../Tsumugi/Wrapper/CustomWrapperWithoutShadow/CustomWrapperWithoutShadow";
+import CustomBoldText from "../Tsumugi/Text/CustomBoldText/CustomBoldText";
+import CustomSubtitle from "../Tsumugi/Text/CustomSubText/CustomSubtitle";
 
 function MainPage() {
   const onClickToBaseShop = () => {

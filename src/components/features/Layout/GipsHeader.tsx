@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import CustomSimpleLayout from "../../Tumugi/Layout/CustomSimpleHeader/CustomSimpleHeader";
-import CustomInstagramIcon from "../../Tumugi/Icon/CustomInstagramIcon/CustomInsgaramIcon";
+import CustomSimpleLayout from "../../Tsumugi/Layout/CustomSimpleHeader/CustomSimpleHeader";
+import CustomInstagramIcon from "../../Tsumugi/Icon/CustomInstagramIcon/CustomInsgaramIcon";
 
 function GipsHeader() {
   return (

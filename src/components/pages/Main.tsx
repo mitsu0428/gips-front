@@ -5,16 +5,15 @@ import GipsHeader from "@/components/features/Layout/GipsHeader";
 import GipsDescription from "../features/GipsDescription";
 import GipsConcepts from "../features/GipsConcepts";
 import GipsFixedButton from "../features/GipsFixedButton";
+import GipsOrder from "../features/GipsOrder";
 
 import font from "../Tumugi/Font/NextFont";
 import CustomSimpleButton from "../Tumugi/Button/CustomSimpleButton/CustomSimpleButton";
 import CustomSimpleFooter from "../Tumugi/Layout/CustomSimpleFooter/CustomSimpleFooter";
 import CustomImageWrapper from "../Tumugi/Image/CustomImage/CustomImageWrapper";
-import CustomWrapperWithShadow from "../Tumugi/Wrapper/CustomWrapperWithShadow/CustomWrapperWithShadow";
 import CustomWrapperWithoutShadow from "../Tumugi/Wrapper/CustomWrapperWithoutShadow/CustomWrapperWithoutShadow";
-import CustomSubtitle from "../Tumugi/Text/CustomSubText/CustomSubtitle";
-import GipsOrder from "../features/GipsOrder";
 import CustomBoldText from "../Tumugi/Text/CustomBoldText/CustomBoldText";
+import CustomSubtitle from "../Tumugi/Text/CustomSubText/CustomSubtitle";
 
 function MainPage() {
   const onClickToBaseShop = () => {
@@ -24,19 +23,19 @@ function MainPage() {
   return (
     <Main className={font.notoSansJP400.className}>
       <GipsHeader />
-
-      <CustomWrapperWithShadow>
-        <CustomImageWrapper
-          imgPath="/gips-images/フィルグ-0.PNG"
-          text="G.I.Ps"
-          alt="G.I.Ps"
-          width={400}
-          height={400}
-        />
-      </CustomWrapperWithShadow>
+      <GipsFixedButton />
 
       <CustomWrapperWithoutShadow>
-        <CustomSubtitle text="『あなたの毎日が豊かな毎日になりますように。』" />
+        <CustomImageWrapper
+          imgPath="/gips-images/a-top.png"
+          alt="G.I.Ps"
+          width={800}
+          height={800}
+        />
+      </CustomWrapperWithoutShadow>
+
+      <CustomWrapperWithoutShadow>
+        <GipsConcepts />
         <CenterWrapper>
           <CustomSimpleButton
             key="1"
@@ -47,21 +46,6 @@ function MainPage() {
       </CustomWrapperWithoutShadow>
 
       <CustomWrapperWithoutShadow>
-        <CustomSubtitle text="コンセプト" />
-        <GipsConcepts />
-      </CustomWrapperWithoutShadow>
-
-      <GipsFixedButton />
-
-      <CustomWrapperWithoutShadow>
-        <CustomSimpleButton
-          key="1"
-          buttonText="Base Shopで購入する"
-          onClick={onClickToBaseShop}
-        />
-      </CustomWrapperWithoutShadow>
-
-      <CustomWrapperWithoutShadow>
         <CustomSubtitle text="注文までの流れ" />
         <GipsOrder />
       </CustomWrapperWithoutShadow>
@@ -69,11 +53,18 @@ function MainPage() {
       <CustomWrapperWithoutShadow>
         <CustomBoldText text="商品イメージ" />
         <CustomImageWrapper
-          imgPath="/gips-images/pre-top-view.png"
+          imgPath="/gips-images/a-concept.png"
           alt="ふぃるぐ商品イメージ"
           width={400}
           height={400}
         />
+        <CenterWrapper>
+          <CustomSimpleButton
+            key="1"
+            buttonText="Base Shopで購入する"
+            onClick={onClickToBaseShop}
+          />
+        </CenterWrapper>
       </CustomWrapperWithoutShadow>
 
       <CustomWrapperWithoutShadow>

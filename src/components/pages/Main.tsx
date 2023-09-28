@@ -14,6 +14,7 @@ import CustomWrapperWithShadow from "../Tumugi/Wrapper/CustomWrapperWithShadow/C
 import CustomWrapperWithoutShadow from "../Tumugi/Wrapper/CustomWrapperWithoutShadow/CustomWrapperWithoutShadow";
 import CustomSubtitle from "../Tumugi/Text/CustomSubText/CustomSubtitle";
 import GipsOrder from "../features/GipsOrder";
+import CustomBoldText from "../Tumugi/Text/CustomBoldText/CustomBoldText";
 
 function MainPage() {
   const onClickToBaseShop = () => {
@@ -21,7 +22,7 @@ function MainPage() {
   };
 
   return (
-    <Main className={font.notoSansJP700.className}>
+    <Main className={font.notoSansJP400.className}>
       <GipsHeader />
 
       <CustomWrapperWithShadow>
@@ -63,6 +64,16 @@ function MainPage() {
       <CustomWrapperWithoutShadow>
         <CustomSubtitle text="注文までの流れ" />
         <GipsOrder />
+      </CustomWrapperWithoutShadow>
+
+      <CustomWrapperWithoutShadow>
+        <CustomBoldText text="商品イメージ" />
+        <CustomImageWrapper
+          imgPath="/gips-images/pre-top-view.png"
+          alt="ふぃるぐ商品イメージ"
+          width={400}
+          height={400}
+        />
       </CustomWrapperWithoutShadow>
 
       <CustomWrapperWithoutShadow>

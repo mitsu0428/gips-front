@@ -5,16 +5,16 @@ type Props = {
   text: string;
 };
 
-const CustomText: React.FC<Props> = ({ text }) => {
+const CustomLeftText: React.FC<Props> = ({ text }) => {
   return <Text>{text}</Text>;
 };
 
-export default CustomText;
+export default CustomLeftText;
 
 const Text = styled.p`
   font-size: 18px;
   padding: 8px;
-  text-align: center;
+  text-align: left;
   @media (max-width: 768px) {
     font-size: 16px;
   }

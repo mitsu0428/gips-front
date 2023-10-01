@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import CustomText from "../Tsumugi/Text/CustomText/CustomText";
+import CustomCenterText from "../Tsumugi/Text/CustomText/CustomCenterText";
 
 function GipsConcepts() {
   return (
     <Recommendationn>
-      <CustomText text="ストレス社会と言われている現代。" />
-      <CustomText text="仕事・育児・人間関係その他沢山の不安、" />
-      <CustomText text="ストレスを抱えて過ごしている皆様の側に寄り添いたい。" />
-      <CustomText text="豊かな毎日を過ごして欲しい。" />
-      <CustomText text="そんな想いからふぃるぐは作られました。" />
+      <CustomCenterText text="ストレス社会と言われている現代。" />
+      <CustomCenterText text="仕事・育児・人間関係その他沢山の不安、" />
+      <CustomCenterText text="ストレスを抱えて過ごしている皆様の側に寄り添いたい。" />
+      <CustomCenterText text="豊かな毎日を過ごして欲しい。" />
+      <CustomCenterText text="そんな想いからふぃるぐは作られました。" />
     </Recommendationn>
   );
 }

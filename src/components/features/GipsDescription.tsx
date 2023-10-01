@@ -1,23 +1,31 @@
 import React from "react";
 import styled from "styled-components";
-import CustomText from "../Tsumugi/Text/CustomText/CustomText";
+
+import CustomBr from "../Tsumugi/Divider/CustomBr/CustomBr";
+import CustomLeftText from "../Tsumugi/Text/CustomText/CustomLeftText";
 
 function GipsDescription() {
   return (
     <Description>
-      <CustomText text="心身をリラックスし不眠を解消したい、集中力・記憶力を高めたい。" />
-      <CustomText text="健康な生活にはトリプトファンが重要に関わっています。" />
-      <CustomText text="トリプトファンは乳製品、大豆製品、ナッツ類などの様々な食品中のたんぱく質に多く含まれます。" />
-      <CustomText text="トリプトファンはセロトニンからメラトニンに変わっていきます。" />
-      <CustomText text="セロトニンは幸せホルモンと言われていますね。" />
-      <CustomText text="ビタミンB6はトリプトファンをセロトニンに変える栄養素として必要です。" />
-      <CustomText text="メラトニンは睡眠の質を高め、自律神経を正常にします。" />
-      <CustomText text="またそのトリプトファンが不足するとセロトニンの分泌低下が起こり、" />
-      <CustomText text="不眠、不安感、うつ病、意識の低下などの症状に繋がります。" />
-      <CustomText text="ふぃるぐは幸せホルモン(セロトニン)に必要とされている成分を" />
-      <CustomText text="手軽に補給してもらう為に作られました。" />
-      <CustomText text="あなたの毎日が豊かな毎日になりますように。" />
-      <CustomText text="願いを込めて。" />
+      <CustomLeftText text="「心身をリラックスし不眠を解消したい。」" />
+      <CustomLeftText text="「集中力・記憶力を高めたい。」" />
+      <CustomBr />
+      <CustomLeftText text="ふぃるぐは幸せホルモンである[セロトニン]に必要とされている成分" />
+      <CustomLeftText text="[トリプトファン]や[ビタミンB6]を手軽に補給してもらう為に作られました。" />
+      <CustomBr />
+      <CustomLeftText text="セロトニンは、幸せホルモンと言われており、" />
+      <CustomLeftText text="ビタミンB6は、トリプトファンをセロトニンに変える栄養素として必要です。" />
+      <CustomBr />
+      <CustomLeftText text="本来、 トリプトファンは、" />
+      <CustomLeftText text="乳製品や大豆製品、ナッツ類などの様々な食品中のたんぱく質に多く含まれます。" />
+      <CustomLeftText text="健康な生活にはトリプトファンを摂ることが重要です。" />
+      <CustomBr />
+      <CustomLeftText text="そしてセロトニンは、メラトニンに変わっていきます。" />
+      <CustomLeftText text="メラトニンは睡眠の質を高め、自律神経を正常に戻します。" />
+      <CustomLeftText text="トリプトファンが不足するとセロトニンの分泌低下が起こり、" />
+      <CustomLeftText text="不眠、不安感、うつ病、意識の低下などの症状に繋がります。" />
+      <CustomBr />
+      <CustomLeftText text="あなたの毎日が豊かな日々になりますように。" />
     </Description>
   );
 }

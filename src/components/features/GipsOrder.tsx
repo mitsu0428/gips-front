@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import CustomText from "../Tsumugi/Text/CustomText/CustomText";
+import CustomCenterText from "../Tsumugi/Text/CustomText/CustomCenterText";
 
 function GipsOrder() {
   return (
     <Wrapper>
       <IconWrapWithText>
-        <CustomText text="1. Base Shopで商品を購入する" />
+        <CustomCenterText text="1. Base Shopで商品を購入する" />
         <Image
           src="/order-icon/カート.png"
           width={50}
@@ -16,7 +16,7 @@ function GipsOrder() {
         />
       </IconWrapWithText>
       <IconWrapWithText>
-        <CustomText text="2. ご注文後、1週間以内に商品が発送されます。" />
+        <CustomCenterText text="2. ご注文後、1週間以内に商品が発送されます。" />
         <Image
           src="/order-icon/配達.png"
           width={50}
@@ -25,7 +25,7 @@ function GipsOrder() {
         />
       </IconWrapWithText>
       <IconWrapWithText>
-        <CustomText text="3. お届けした商品をお受け取りください。" />
+        <CustomCenterText text="3. お届けした商品をお受け取りください。" />
         <Image
           src="/order-icon/受け取り.png"
           width={50}

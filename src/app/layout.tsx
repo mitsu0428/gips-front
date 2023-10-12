@@ -1,6 +1,6 @@
 import "./globals.css";
+import Head from "next/head";
 import { Inter } from "next/font/google";
-import SeoSettings from "@/components/Tsumugi/SeoSettings/SeoSettings";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +16,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <SeoSettings
-        pageTitle={metadata.title}
-        pageDescription={metadata.description}
-      />
       <body className={inter.className}>{children}</body>
     </html>
   );

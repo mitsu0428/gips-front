@@ -6,16 +6,23 @@ type Props = {
 };
 
 const CustomSimpleFooter: React.FC<Props> = ({ text }) => {
-  return <Footer>{text}</Footer>;
+  return (
+    <Footer>
+      <FooterText>{text}</FooterText>
+    </Footer>
+  );
 };
 
 export default CustomSimpleFooter;
 
 const Footer = styled.footer`
-  height: 100px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: 16px;
+`;
+
+const FooterText = styled.p`
+  font-size: 1rem;
 `;

@@ -6,7 +6,7 @@ import CustomInstagramIcon from "../../Tsumugi/Icon/CustomInstagramIcon/CustomIn
 
 function GipsHeader() {
   return (
-    <CustomSimpleLayout flexDirection="row">
+    <CustomSimpleLayout flexdirection="row">
       <LogoWrapper>
         <StyledImage
           src="/gips-logo/gips-logo.jpg"

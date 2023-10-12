@@ -3,21 +3,21 @@ import styled from "styled-components";
 
 type Props = {
   children: React.ReactNode;
-  flexDirection?: string;
+  flexdirection?: string;
 };
 
 const CustomSimpleLayout: React.FC<Props> = ({
   children,
-  flexDirection = "column",
+  flexdirection = "column",
 }) => {
-  return <Layout flexDirection={flexDirection}>{children}</Layout>;
+  return <Layout flexdirection={flexdirection}>{children}</Layout>;
 };
 
 export default CustomSimpleLayout;
 
-const Layout = styled.div<{ flexDirection: string }>`
+const Layout = styled.div<{ flexdirection: string }>`
   display: flex;
-  flex-direction: ${(props) => props.flexDirection};
+  flex-direction: ${(props) => props.flexdirection};
   justify-content: space-between;
   align-items: center;
   width: 100%;

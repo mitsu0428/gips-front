@@ -19,5 +19,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 20,
   "workbench.reduceMotion": "on",
-  "workbench.editor.untitled.hint": "hidden"
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.empty.hint": "hidden"
 }

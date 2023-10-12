@@ -29,8 +29,8 @@ function MainPage() {
         <CustomImageWrapper
           imgPath="/gips-images/a-top.png"
           alt="G.I.Ps"
-          width={800}
-          height={800}
+          width={1200}
+          height={1200}
         />
       </CustomWrapperWithoutShadow>
 

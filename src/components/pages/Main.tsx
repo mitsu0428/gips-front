@@ -25,14 +25,12 @@ function MainPage() {
       <GipsHeader />
       <GipsFixedButton />
 
-      <CustomWrapperWithoutShadow>
-        <CustomImageWrapper
-          imgPath="/gips-images/a-top.png"
-          alt="G.I.Ps"
-          width={1200}
-          height={1200}
-        />
-      </CustomWrapperWithoutShadow>
+      <CustomImageWrapper
+        imgPath="/gips-images/a-top.png"
+        alt="G.I.Ps"
+        width={1200}
+        height={1200}
+      />
 
       <CustomWrapperWithoutShadow>
         <GipsConcepts />

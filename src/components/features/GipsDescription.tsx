@@ -25,7 +25,7 @@ function GipsDescription() {
       <CustomLeftText text="トリプトファンが不足するとセロトニンの分泌低下が起こり、" />
       <CustomLeftText text="不眠、不安感、うつ病、意識の低下などの症状に繋がります。" />
       <CustomBr />
-      <CustomLeftText text="あなたの毎日が豊かな日々になりますように。" />
+      <CustomLeftText text="あなたの毎日が豊かな日々になりますように" />
     </Description>
   );
 }

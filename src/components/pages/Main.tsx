@@ -26,7 +26,7 @@ function MainPage() {
       <GipsFixedButton />
 
       <CustomImageWrapper
-        imgPath="/gips-images/a-top.png"
+        imgPath="/gips-front-image/ふぃるぐヘッダーver01.png"
         alt="G.I.Ps"
         width={1200}
         height={1200}
@@ -51,7 +51,7 @@ function MainPage() {
       <CustomWrapperWithoutShadow>
         <CustomBoldText text="商品イメージ" />
         <CustomImageWrapper
-          imgPath="/gips-images/a-concept.png"
+          imgPath="/gips-front-image/ふぃるぐ商品画像ver01.png"
           alt="ふぃるぐ商品イメージ"
           width={400}
           height={400}
